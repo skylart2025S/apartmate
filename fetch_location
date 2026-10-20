@@ -1,6 +1,7 @@
 const axios = require('axios');
+require('dotenv').config();
 
-const apiKey = 'YOUR_GOOGLE_PLACES_API_KEY';
+const apiKey = process.env.GOOGLE_PLACES_API_KEY;
 const location = '37.7749,-122.4194'; // Replace with the latitude and longitude of your location
 const radius = 5000; // Radius in meters
 
